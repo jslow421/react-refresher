@@ -1,6 +1,10 @@
 import React from "react";
 
-function Todo(props:any) {
+interface CustomValues {
+    text: string
+}
+
+function Todo(props:CustomValues) {
     return (
         <div className='card'>
             <h2>{props.text}</h2>
